@@ -1,0 +1,106 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: "Arial";
+	color: #FCF4E8;
+}
+
+#bg {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	background: #271315 url("background.png");
+	background-size: cover;
+	z-index: -1;
+}
+
+main {
+	width: 80%;
+	max-width: 1180px;
+	padding: 10px 30px;
+	margin: auto auto 50px auto;
+	background: #a88e69;
+	border-radius: 0 10px 10px 10px;
+}
+
+a {
+	color: #33a;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	color: #FADCAF;
+}
+
+header {
+	width: 80%;
+	max-width: 1180px;
+	padding: 50px 60px 50px 0;
+	margin: auto;
+}
+
+header h1 {
+	font-size: 250%;
+}
+
+nav {
+	width: 80%;
+	max-width: 1180px;
+	padding: 0 60px 0 0;
+	margin: auto;
+	list-style: none;
+	display: block;
+}
+
+nav li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: inline-block;
+}
+
+nav li a {
+	padding: 10px 20px;
+	border-radius: 10px 10px 0 0;
+	margin: 0;
+	display: block;
+	color: #FFECD1;
+	background: #7A674C;
+	text-decoration: none;
+	outline: 0;
+}
+
+nav li.selected a {
+	background: #a88e69;
+}
+
+nav li:hover a {
+	background: #917A5A
+}
+
+nav li.selected:hover a {
+	background: #a88e69;
+}
+
+#craftTree svg {
+
+}
+
+#craftTree {
+
+}
+
+.edgeLabel, .label {
+	color: black;
+}
+
+.edgeLabel {
+	background: transparent;
+	/* background: rgba(255, 255, 255, 0.6);
+	padding: 5px;
+	border-radius: 10px; */
+}
