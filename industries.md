@@ -17,7 +17,7 @@ scripts:
 	});
 
 	var request = new XMLHttpRequest();
-	request.open("GET", "https://raw.githubusercontent.com/rubenwardy/capitalism_game/master/docs/crafting.mermaid");
+	request.open("GET", "crafting.mermaid");
 	request.responseType = "text";
 
 	request.onload = function() {
@@ -25,13 +25,14 @@ scripts:
 		element.innerHTML = "<p>Failed to load craft tree data.</p>";
 
 		var graphDefinition = request.response;
-		var graph = mermaidAPI.render("craftTree", graphDefinition, function(svgCode, bindFunctions) {
-			element.innerHTML = svgCode;
+		if (graphDefinition != "")
+			mermaidAPI.render("craftTree", graphDefinition, function(svgCode, bindFunctions) {
+				element.innerHTML = svgCode;
 
-			var svg = element.firstChild;
-			var bb  = svg.getBBox();
-			svg.setAttribute("viewBox", [bb.x, bb.y, bb.width, bb.height].join(" "));
-		});
+				var svg = element.firstChild;
+				var bb  = svg.getBBox();
+				svg.setAttribute("viewBox", [bb.x, bb.y, bb.width, bb.height].join(" "));
+			});
 	};
 
 	request.send();
