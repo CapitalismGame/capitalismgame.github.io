@@ -1,6 +1,7 @@
 ---
 title: Industries
 layout: default
+root: ../
 css:
 - https://unpkg.com/mermaid@7.0.5/dist/mermaid.neutral.min.css
 scripts:

@@ -1,32 +1,7 @@
-<!doctype html>
-<html>
-	<head>
-		<title>{{ page.title }} - Capitalism Game</title>
-		{% for script in page.scripts %}
-			<script src="{{ script }}"></script>
-		{% endfor %}
-		{% for css in page.css %}
-			<link rel="stylesheet" type="text/css" href="{{ css }}">
-		{% endfor %}
-		<link rel="stylesheet" type="text/css" href="static/style.css">
-		<link rel="icon"          type="image/x-icon" href="favicon.ico" />
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-		<link rel="shortcut icon" type="image/png"    href="static/logo.png" />
-	</head>
-	<body>
-		<div id="bg"></div>
-		<header>
-			<h1>Capitalism Game</h1>
-		</header>
-		<nav class="buttonlist">
-			{% for link in site.data.nav %}
-				<li{% if page.title == link.title %} class="selected"{% endif %}>
-					<a href="{{ link.url }}">{{ link.title }}</a></li>
-			{% endfor %}
-		</nav>
-		<main>
-			{{ content }}
-		</main>
-	</body>
+---
+layout: base
+---
 
-</html>
+<div class="container">
+	{{ content }}
+</div>
