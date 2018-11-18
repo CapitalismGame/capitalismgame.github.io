@@ -26,6 +26,7 @@ Legend:
 
 <img id="img" class="img-fluid my-4" style="background: #ccc;" src="{{ page.root }}static/crafting.png" alt="Craft diagram">
 
+{% comment %}
 <div id="craftTree" class="mermaid">
 	<p>Loading interactive craft tree...</p>
 </div>
@@ -59,3 +60,4 @@ Legend:
 
 	request.send();
 </script>
+{% endcomment %}
