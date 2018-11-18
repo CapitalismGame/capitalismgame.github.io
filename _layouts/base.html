@@ -42,11 +42,11 @@
 	<title>{{ page.title }} - Capitalism Game</title>
 
 	{% for script in page.scripts %}
-	<script src="{{ page.root }}{{ script }}"></script>
+		<script src="{{ script }}"></script>
 	{% endfor %}
 
 	{% for css in page.css %}
-	<link rel="stylesheet" type="text/css" href="{{ page.root }}{{ css }}">
+		<link rel="stylesheet" type="text/css" href="{{ css }}">
 	{% endfor %}
 
 	<link href="{{ page.root }}static/bootstrap.css" rel="stylesheet">
