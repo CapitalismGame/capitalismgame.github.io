@@ -8,6 +8,8 @@ scripts:
 - https://unpkg.com/mermaid@7.0.5/dist/mermaid.min.js
 ---
 
+<h1 class="mt-4">Industries</h1>
+
 Each company will likely have to focus on a particular industry to be successful.
 To enter an industry, you either need to research the required technology or
 buy a company which already has it.
