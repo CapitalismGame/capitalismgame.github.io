@@ -22,8 +22,10 @@ Legend:
 	<li style="background:#EC5f67;">Raw</li>
 </ul>
 
+<img id="img" class="img-fluid my-4" style="background: #ccc;" src="{{ page.root }}static/crafting.png" alt="Craft diagram">
+
 <div id="craftTree" class="mermaid">
-	<p>Loading craft tree...</p>
+	<p>Loading interactive craft tree...</p>
 </div>
 
 <script>
@@ -32,7 +34,7 @@ Legend:
 	});
 
 	var request = new XMLHttpRequest();
-	request.open("GET", "crafting.mermaid");
+	request.open("GET", "https://rubenwardy.com/crafting.mermaid");
 	request.responseType = "text";
 
 	request.onload = function() {
@@ -40,14 +42,17 @@ Legend:
 		element.innerHTML = "<p>Failed to load craft tree data.</p>";
 
 		var graphDefinition = request.response;
-		if (graphDefinition != "")
+		if (graphDefinition != "") {
 			mermaidAPI.render("craftTree", graphDefinition, function(svgCode, bindFunctions) {
 				element.innerHTML = svgCode;
 
 				var svg = element.firstChild;
 				var bb  = svg.getBBox();
 				svg.setAttribute("viewBox", [bb.x, bb.y, bb.width, bb.height].join(" "));
+				$("#img").hide();
 			});
+
+		}
 	};
 
 	request.send();
