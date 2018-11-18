@@ -36,7 +36,7 @@ Legend:
 	});
 
 	var request = new XMLHttpRequest();
-	request.open("GET", "https://rubenwardy.com/crafting.mermaid");
+	request.open("GET", "https://rubenwardy.com/capitalism_game/crafting.mermaid");
 	request.responseType = "text";
 
 	request.onload = function() {
