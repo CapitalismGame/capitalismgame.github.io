@@ -1,5 +1,14 @@
 - title: About
   url: ""
 
+- title: Legal Entities
+  url: legal_entities/
+
+- title: Land
+  url: land/
+
+- title: Factories
+  url: factories/
+
 - title: Industries
   url: industries/
