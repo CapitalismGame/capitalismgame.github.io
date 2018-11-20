@@ -16,8 +16,8 @@ layout: base
 <div class="container">
 	<h2 class="mb-4">Gameplay</h2>
 
-	<div class="row my-4">
-		<div class="col-md-6">
+	<div class="row">
+		<div class="col-md-6 my-4">
 			<h3>Run a Business</h3>
 			<p>
 				Create a business by yourself or with others.
@@ -27,7 +27,7 @@ layout: base
 			</p>
 			<p><a class="btn btn-secondary" href="{{ page.root }}legal_entities/" role="button">Legal Entities &raquo;</a></p>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-6 my-4">
 			<h2>Factories and Distribution</h2>
 			<p>
 				Create efficient factories, distribution chains, and shops.<br />
@@ -36,15 +36,15 @@ layout: base
 			<p><a class="btn btn-secondary" href="{{ page.root }}factories/" role="button">Factories &raquo;</a></p>
 		</div>
 	</div>
-	<div class="row my-4">
-		<div class="col-md-6">
+	<div class="row">
+		<div class="col-md-6 my-4">
 			<h3>Acquire Land and Money</h3>
 			<p>
 				Buy land to build factories, offices, and shops.
 			</p>
 			<p><a class="btn btn-secondary" href="{{ page.root }}land/" role="button">Land &raquo;</a></p>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-6 my-4">
 			<h2>Expand Into New Industries</h2>
 			<p>
 				Expand using research,
@@ -53,8 +53,8 @@ layout: base
 			<p><a class="btn btn-secondary" href="{{ page.root }}industries/" role="button">Industries &raquo;</a></p>
 		</div>
 	</div>
-	<div class="row my-4">
-		<div class="col-md-6">
+	<div class="row">
+		<div class="col-md-6 my-4">
 			<h2>Government</h2>
 			<p>
 				Government members can propose bills to change tax levels,
@@ -65,7 +65,7 @@ layout: base
 			</p>
 			<p><a class="btn btn-secondary" href="{{ page.root }}legal_entities/" role="button">Legal Entities &raquo;</a></p>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-6 my-4">
 			<h2>Espionage</h2>
 			<p>
 				Steal corporate secrets from competitors,
@@ -76,14 +76,49 @@ layout: base
 	</div>
 </div>
 
-<div class="jumbotron">
+<div class="jumbotron py-4">
 	<div class="container">
-		<h2 class="display-3">Sounds good, how can I play?</h2>
+		<h2 class="mb-4">Screenshots</h2>
+		<div class="row"> <!--class="card-group">-->
+			<div class="col-md-4">
+				<a href="static/company_dashboard.png">
+					<img class="img-fluid" src="static/company_dashboard.png" alt="Company dashboard">
+				</a>
+				<div class="card-body">
+					<p class="card-text">
+						The <a href="legal_entities/">company</a> dashboard shown when you open the inventory.
+						Shows an overview of all parts of the company you are
+						currently representing.
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<a href="static/land.png">
+					<img class="img-fluid" src="static/land.png" alt="Land admin dialog">
+				</a>
+				<div class="card-body">
+					<p class="card-text">
+						An admin dialog to manage <a href="land/">land allocation</a>
+						and area protection.
+						Notice how companies can own areas
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<div class="container">
+		<h2 class="mb-4">Sounds good, how can I play?</h2>
 		<p>
 			Unfortunately, the game isn't yet available publicly.<br />
 			We'll make sure to announce sufficiently when the game is available,<br />
-			in the meantime you can subscribe on Twitter for updates
+			in the meantime you can join the Discord to keep up to date.
 		</p>
-		<p><a class="btn btn-primary" href="https://twitter.com/rubenwardy" role="button">Subscribe</a></p>
+		<p>
+			<a class="btn btn-primary" href="https://discord.gg/ER77cB5" role="button">Discord</a>
+			<a class="btn btn-default" href="https://twitter.com/rubenwardy" role="button">Twitter</a>
+			<a class="btn btn-default" href="https://github.com/rubenwardy/capitalism_game/" role="button">Github</a>
+		</p>
 	</div>
-</div>
