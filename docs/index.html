@@ -1,0 +1,17 @@
+---
+title: Documentation
+layout: default
+root: ../
+---
+
+<ul>
+	{% for link in site.data.nav %}
+		{% if link.url contains "docs" %}
+			<li>
+				<a href="{{ page.root }}{{ link.url }}">
+					{{ link.title }}
+				</a>
+			</li>
+		{% endif %}
+	{% endfor %}
+</ul>
