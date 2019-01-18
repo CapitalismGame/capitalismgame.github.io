@@ -2,7 +2,9 @@
 title: Factories
 layout: default
 root: ../../
-redirect_from: "/factories/"
+redirect_from:
+- /factories/
+- /docs/factories/
 ---
 
 There will be some kind of automation to manufacture products.

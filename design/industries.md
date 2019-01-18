@@ -2,7 +2,9 @@
 title: Industries
 layout: default
 root: ../../
-redirect_from: "/industries/"
+redirect_from:
+- /industries/
+- /docs/industries/
 ---
 
 Each company will likely have to focus on a particular industry to be successful.

@@ -1,12 +1,14 @@
 ---
-title: Documentation
+title: Design Docs
 layout: default
 root: ../
+redirect_from:
+- /docs/
 ---
 
 <ul>
 	{% for link in site.data.nav %}
-		{% if link.url contains "docs" %}
+		{% if link.url contains "design" %}
 			<li>
 				<a href="{{ page.root }}{{ link.url }}">
 					{{ link.title }}

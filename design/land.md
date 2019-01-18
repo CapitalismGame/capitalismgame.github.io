@@ -2,7 +2,9 @@
 title: Land
 layout: default
 root: ../../
-redirect_from: "/land/"
+redirect_from:
+- /land/
+- /docs/land/
 ---
 
 Land areas can be owned by a company, an individual, or the government.

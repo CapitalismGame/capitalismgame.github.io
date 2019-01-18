@@ -2,13 +2,16 @@
   url: ""
 
 - title: Legal Entities
-  url: docs/legal_entities/
+  url: design/legal_entities/
 
 - title: Land
-  url: docs/land/
+  url: design/land/
 
 - title: Factories
-  url: docs/factories/
+  url: design/factories/
 
 - title: Industries
-  url: docs/industries/
+  url: design/industries/
+
+- title: Dev Docs
+  url: ldoc/

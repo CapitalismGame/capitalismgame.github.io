@@ -2,7 +2,9 @@
 title: Legal Entities
 layout: default
 root: ../../
-redirect_from: "/legal_entities/"
+redirect_from:
+- /legal_entities/
+- /docs/legal_entities/
 ---
 
 There are two types of entity: companies and individuals.
