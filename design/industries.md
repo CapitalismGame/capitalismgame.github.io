@@ -22,3 +22,18 @@ Legend:
 </ul>
 
 <img id="img" class="img-fluid my-4" style="background: #ccc;" src="{{ page.root }}static/crafting.png" alt="Craft diagram">
+
+## Technical bits
+
+* Nearly everything should be automatable in end game.
+* node_io is used to create machinary, with fluids_lib used as a implementor of the node_io API.
+
+## Crude Oil and Plastics
+
+Crude Oil can be found under the sea, and split using fractional distillation columns into three components:
+
+* Asphalt - used for roads
+* Naphtha - used to make plastic
+* Petrol - used as fuel
+
+Naphtha is then further
